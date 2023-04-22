@@ -82,9 +82,9 @@ public class GDichTTe extends GDich {
 		for(int i = 0; i < n; i++)
 			if(ds[i].thanhTien() > 100000)
 				System.out.println("Ma GD: " + ds[i].getMGD());
-		System.out.println("------------------------------");
+		System.out.println("------------------------------");	
 		
-		HashMap<String, Float> tong = new HashMap<>();
+		HashMap<String, Float, Integer> tong = new HashMap<>();
 		for (int i=0; i<n; i++) {
 			String key = ds[i].getThangNam();
 			if (!tong.containsKey(key)) {
